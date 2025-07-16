@@ -1,0 +1,171 @@
+/* Basic reset for all elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif; /* Might change font later? */
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(145deg, #e2e8ff, #f3f4ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,.1);
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+  }
+  
+  /* hidden means we hide it */
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translateY(20px);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    position: relative;
+  }
+  
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    /* outline: none; maybe add later? */
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    color: #999;
+    cursor: pointer;
+  }
+ 
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5f6df7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 
+      background-color 0.2s ease, 
+      transform 0.2s ease, 
+      box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #4955d6;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+button:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+  
+  button:hover {
+    background-color: #4955d6;
+  }
+  
+  .toggle-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .toggle-link span {
+    font-weight: bold;
+    color: #5f6df7;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .social-buttons i {
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform .3s ease, color .3s ease;
+  }
+  
+  .social-buttons i:hover {
+    transform: scale(1.2);
+    color: #5f6df7;
+  }
+  
+  .back-link {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5f6df7;
+    cursor: pointer;
+  }
+  
+  .welcome-image, .signup-image, .login-image {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .welcome-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width:400px) {
+    .container {
+      width: 90%;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .welcome-image, .signup-image, .login-image {
+      max-width: 200px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  
+  /* random unused style */
+  .unused-class {
+    color: red;
+  }
