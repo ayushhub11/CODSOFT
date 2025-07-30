@@ -1,0 +1,160 @@
+/* RESET - Template */
+*{
+    margin:0;
+    padding:0; box-sizing: border-box;
+  }
+  
+  /* Base */
+  body {
+    font-family:'Segoe UI', sans-serif;
+    background:#f4f4f4; color:#333;
+    line-height:1.6;
+  }
+  
+  /* Container */
+  .container {
+    max-width:620px;
+    margin:20px auto; background:#fff;
+    border-radius:6px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  /* Hero Banner */
+  .hero {
+    text-align:center;
+    padding:30px 20px;
+    background-color:#264653;
+    color:#ffffff;
+  }
+  
+  .hero .logo {
+    max-width:200px; margin-bottom:20px;
+  }
+  
+  .hero h1 {font-size:24px;margin-bottom:10px;}
+  .hero p { font-size:15px; margin-bottom:20px; }
+  
+  .btn-primary {
+    background-color:#e76f51; color:#fff;
+    text-decoration:none; padding:12px 24px;
+    border-radius:5px; display:inline-block;
+    font-weight:600; font-size:14px;
+    transition:all 0.3s ease;
+  }
+  .btn-primary:hover {
+    background-color:#f77f63;
+    transform:scale(1.05);
+  }
+  
+  /* Features Area */
+  .features {
+    padding:30px 20px 10px;
+    background-color:#fefae0;
+    text-align:center;
+  }
+  .features h2 {
+    font-size:20px;
+    color:#2a9d8f;
+    margin-bottom:20px;
+  }
+  .cards {
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:space-between;
+  }
+  
+  /* Card */
+  .card {
+    background-color:#e9c46a;
+    color:#264653;
+    padding:16px;
+    border-radius:6px;
+    flex:1 1 100%;
+    box-sizing:border-box;
+    position:relative;
+    overflow:hidden;
+    transition:transform 0.3s ease;
+  }
+  .card:hover{ transform:scale(1.02); }
+  
+  /* Background Images for Cards */
+  .card:nth-child(1){
+    background:url('https://thumbs.dreamstime.com/b/web-development-courses-abstract-concept-vector-illustration-programming-beginners-top-online-coding-build-websites-238655843.jpg') center/cover no-repeat;
+    color:#fff;
+  }
+  .card:nth-child(2){
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGd3d9WrMnMNF5FnRD-O4vDaRiNVEXvrTVsw&s') center/cover no-repeat;
+    color:#fff;
+  }
+  .card:nth-child(3){
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8167LPRLyEuTrX91r7r0S-W0gc71C6n9Pal7ZxiViVSTkFd-GUigwRtCfjeXAKyCMDVI&usqp=CAU') center/cover no-repeat;
+    color:#fff;
+  }
+  .card:nth-child(4){
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-2O-U6J3DQTw3wAfEeFtcu_Q_tiKvBrbzOfmGsezBaORvkxioAkuCGUFbFwLrg--0oU&usqp=CAU') center/cover no-repeat;
+    color:#fff;
+  }
+  .card:nth-child(5){
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd7Uafp-oIATVXv9qJB8_iVlF1qZuXhNygKg&s') center/cover no-repeat;
+    color:#fff;
+  }
+  
+  .card::before{
+    content:""; position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color:rgba(0,0,0,0.55);
+    z-index:0;
+  }
+  .card *{ position:relative; z-index:1; }
+  .card h3 {margin-top:0;font-size:16px;}
+  .card p {font-size:14px;}
+  
+  /* Secondary Button */
+  .btn-secondary {
+    background-color:#2a9d8f;
+    color:#fff; text-decoration:none;
+    padding:10px 22px; border-radius:5px;
+    display:inline-block; font-weight:600;
+    font-size:13px;
+    margin:30px auto 10px;
+    transition:all 0.3s ease;
+  }
+  .btn-secondary:hover {
+    background-color:#3bb3a3;
+    transform:scale(1.05);
+  }
+  
+  /* Responsive Cards */
+  @media(min-width:600px){
+    .card {
+      flex:1 1 calc(33.333% - 8px);
+    }
+  }
+  
+  /* Footer Area */
+  .footer {
+    background-color:#f4a261;
+    padding:20px;
+    text-align:center;
+    color:#fff;
+  }
+  .social-icons {
+    margin:10px 0;
+  }
+  .social-icons img {
+    width:24px;
+    margin:0 8px;
+    vertical-align:middle;
+  }
+  .footer p {
+    margin:6px 0; font-size:13px;
+  }
+  .disclaimer {
+    font-size:11px;
+    color:#fff;
+    margin-top:12px;
+    line-height:1.4;
+  }
+  
